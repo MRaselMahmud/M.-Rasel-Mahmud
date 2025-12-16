@@ -182,6 +182,15 @@ footer { background: #2c3e50; color: white; text-align: center; padding: 20px 0;
   text-decoration: underline;
   color: #219150;
 }
+.profile-container{
+  flex: 0 0 240px;   /* fixed left column width */
+}
+
+.intro-text{
+  flex: 1;           /* takes remaining space */
+  min-width: 320px;  /* prevents ugly wrapping */
+}
+
  
 </style>
 </head>
@@ -217,18 +226,6 @@ footer { background: #2c3e50; color: white; text-align: center; padding: 20px 0;
   <section id="home" class="intro">
     <div class="profile-container">
       <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-    
-  <section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-info">
-    <p><strong>Instructor:</strong> M. Rasel Mahmud</p>
-    <p><strong>Email:</strong> <a href="mailto:mmahmud2@kennesaw.edu">mmahmud2@kennesaw.edu</a></p>
-    <p><strong>Office Location:</strong> Atrium (J) Building, Room 377 – Marietta Campus</p>
-    <p><strong>Office Phone:</strong> 470-578-6005</p>
-    <p><strong>Office Hours:</strong> Please schedule via Outlook mail</p>
-    <p><strong>Preferred Method of Communication:</strong> Outlook mail</p>
-  </div>
-</section>
 
       <div class="social-below-pic">
         <a href="https://www.linkedin.com/in/mraselmahmud/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -241,6 +238,19 @@ footer { background: #2c3e50; color: white; text-align: center; padding: 20px 0;
       <p>
         I am an assistant professor of computer science at Kennesaw State University. I completed my Ph.D. from the Department of Computer Science at the University of Texas at San Antonio (UTSA), USA, advised by Dr. John Quarles. I obtained my MS in Computer Science from the University of South Dakota, USA. I completed my B.Sc. in Computer Science and Engineering from Rajshahi University of Engineering and Technology (RUET), Bangladesh. My research interests include but are not limited to Extended Reality (i.e., Virtual Reality, Augmented Reality, and Mixed Reality), Human-Centered Computing, Artificial Intelligence, and Computer Vision. I published in top-tier venues, e.g., IEEE TVCG, IEEE VR, IEEE ISMAR, ACM VRST, and ACM ASSETS. One of my papers has been awarded an “Honorable Mention” by the ACM VRST 2022 conference for the 2nd-best paper at the conference. I also worked as a software developer previously.
       </p>
+
+ <section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-info">
+    <p><strong>Instructor:</strong> M. Rasel Mahmud</p>
+    <p><strong>Email:</strong> <a href="mailto:mmahmud2@kennesaw.edu">mmahmud2@kennesaw.edu</a></p>
+    <p><strong>Office Location:</strong> Atrium (J) Building, Room 377 – Marietta Campus</p>
+    <p><strong>Office Phone:</strong> 470-578-6005</p>
+    <p><strong>Office Hours:</strong> Please schedule via Outlook mail</p>
+    <p><strong>Preferred Method of Communication:</strong> Outlook mail</p>
+  </div>
+ </section>
+     
     </div>
   </section>
 
