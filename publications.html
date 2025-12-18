@@ -69,7 +69,7 @@
 
 
 <style>
-#publications h2 {
+/* #publications h2 {
   color: #27ae60;
   border-bottom: 2px solid #27ae60;
   display: inline-block;
@@ -102,7 +102,46 @@
 
 .pub-category ol {
   list-style-type: decimal;  /* ensures numbers show */
-  margin-left: 20px;         /* adds space before numbers */
+  /* margin-left: 20px;         /* adds space before numbers */ */
+} */
+/* ================= Publications numbering ================= */
+
+/* Journal Papers → J1, J2, J3 */
+ol.journal-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: journal;
+}
+
+ol.journal-list li {
+  counter-increment: journal;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+ol.journal-list li::before {
+  content: "J" counter(journal) ". ";
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Conference Papers → C9, C8, C7 (reverse) */
+ol.conf-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: conf 10; /* total papers + 1 */
+}
+
+ol.conf-list li {
+  counter-increment: conf -1;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+ol.conf-list li::before {
+  content: "C" counter(conf) ". ";
+  font-weight: bold;
+  color: #27ae60;
 }
 
 </style>
